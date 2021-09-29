@@ -1,7 +1,5 @@
- //
 //  ContentView.swift
 //  NightWatch
-//
 //  Created by Ryan Grunest on 9/27/21.
 //
 
@@ -9,9 +7,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      Text("Nightly Tasks")
-      Text("Weekly Tasks")
-      Text("Monthly Tasks")
+      VStack {
+        Text("Nightly Tasks")
+        Text("Weekly Tasks")
+        Text("Monthly Tasks")
+      }
     }
 }
 
