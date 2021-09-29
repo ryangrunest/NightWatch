@@ -11,8 +11,9 @@ struct ContentView: View {
         HStack {
           VStack(alignment: .leading) {
             Text("Nightly Tasks")
-              .font(.headline)
+              .font(.title3)
               .foregroundColor(.gray)
+              .padding(.top, 6.0)
             Text("Check all windows")
             Text("Check all doors")
             Text("Check that the safe is locked")
@@ -20,19 +21,14 @@ struct ContentView: View {
             Text("Inspect security cameras")
             Text("Clear ice from sidewalks")
             Text("Document \"strange and unusual\" occurences")
-            Spacer()
-          }
-          VStack(alignment: .leading) {
             Text("Weekly Tasks")
-              .font(.headline)
+              .font(.title3)
               .foregroundColor(.gray)
-            Spacer()
-          }
-          VStack(alignment: .leading) {
+              .padding(.top, 6.0)
             Text("Monthly Tasks")
-              .font(.headline)
+              .font(.title3)
               .foregroundColor(.gray)
-            Spacer()
+              .padding(.top, 6.0)
           }
         }.padding(.all, 12.0)
         Spacer()
