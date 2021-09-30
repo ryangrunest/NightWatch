@@ -29,9 +29,9 @@ struct ContentView: View {
               Text("Clear ice from sidewalks")
               Text("Document \"strange and unusual\" occurences")
             }
-            Divider()
 //            MARK: Weekly Tasks
             Group {
+              Divider()
               HStack {
                 Image(systemName: "sun.and.horizon")
                   .padding(.top, 5.0)
@@ -43,9 +43,9 @@ struct ContentView: View {
                 Text("Check inside all vacant rooms")
                 Text("Walk the perimeter of the property")
             }
-            Divider()
 //            MARK: Monthly Tasks
             Group {
+              Divider()
               HStack {
                 Image(systemName: "calendar")
                   .padding(.top, 5.0)
