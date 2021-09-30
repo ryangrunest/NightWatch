@@ -10,37 +10,53 @@ struct ContentView: View {
       VStack {
         HStack {
           VStack(alignment: .leading) {
-            HStack {
-              Image(systemName: "moon.stars.fill")
-                .padding(.top, 5.0)
-              Text("Nightly Tasks")
-                .font(.title3)
-                .foregroundColor(.gray)
-                .padding(.top, 6.0)
+//            MARK: Nightly Tasks
+            Group {
+              HStack {
+                Image(systemName: "moon.stars.fill")
+                  .padding(.top, 5.0)
+                Text("Nightly Tasks")
+                  .font(.title3)
+                  .foregroundColor(.gray)
+                  .padding(.top, 6.0)
+              }
+              
+              Text("Check all windows")
+              Text("Check all doors")
+              Text("Check that the safe is locked")
+              Text("Check the mailbox")
+              Text("Inspect security cameras")
+              Text("Clear ice from sidewalks")
+              Text("Document \"strange and unusual\" occurences")
             }
-            
-            Text("Check all windows")
-            Text("Check all doors")
-            Text("Check that the safe is locked")
-            Text("Check the mailbox")
-            Text("Inspect security cameras")
-            Text("Clear ice from sidewalks")
-            Text("Document \"strange and unusual\" occurences")
-            HStack {
-              Image(systemName: "sun.and.horizon")
-                .padding(.top, 5.0)
-              Text("Weekly Tasks")
-                .font(.title3)
-                .foregroundColor(.gray)
-                .padding(.top, 6.0)
+            Divider()
+//            MARK: Weekly Tasks
+            Group {
+              HStack {
+                Image(systemName: "sun.and.horizon")
+                  .padding(.top, 5.0)
+                Text("Weekly Tasks")
+                  .font(.title3)
+                  .foregroundColor(.gray)
+                  .padding(.top, 6.0)
+                }
+                Text("Check inside all vacant rooms")
+                Text("Walk the perimeter of the property")
             }
-            HStack {
-              Image(systemName: "calendar")
-                .padding(.top, 5.0)
-              Text("Monthly Tasks")
-                .font(.title3)
-                .foregroundColor(.gray)
-                .padding(.top, 6.0)
+            Divider()
+//            MARK: Monthly Tasks
+            Group {
+              HStack {
+                Image(systemName: "calendar")
+                  .padding(.top, 5.0)
+                Text("Monthly Tasks")
+                  .font(.title3)
+                  .foregroundColor(.gray)
+                  .padding(.top, 6.0)
+              }
+              Text("Test security alarm")
+              Text("Test motion detectors")
+              Text("Test smoke alarms")
             }
           }
         }.padding(.all, 6.0)
